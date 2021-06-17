@@ -1,0 +1,137 @@
+.mainheader {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    z-index: 4000;
+}
+
+* {
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+}
+
+img {
+    width: 60px;
+}
+
+.rightside {
+    flex: 0.4;
+}
+
+.leftside {
+    flex: 0.5;
+}
+
+.leftItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.loginbutton {
+    border-radius: 24px;
+    box-shadow: 0px 0px 14px #00000033;
+    width: 95px;
+    font-size: 12px;
+    height: 35px;
+    background-color: transparent;
+    border: 2px solid #663399;
+    cursor: pointer;
+}
+
+.loginbutton:hover {
+    background-color: #663399;
+    color: #fff;
+}
+
+.getstarted {
+    border-radius: 24px;
+    box-shadow: 0px 0px 14px #00000033;
+    width: 90px;
+    font-size: 10px;
+    cursor: pointer;
+    color: #fff;
+    height: 35px;
+    background: linear-gradient( 90deg, #9F62C9, #663399);
+    border: none;
+}
+
+.getstarted:hover {
+    background: #663399;
+    font-weight: 500;
+}
+
+.header1 {
+    font-weight: 500;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header1:hover {
+    font-weight: 600;
+    color: #663399;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 2600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    .mainheader {
+        display: flex;
+        flex: 0.9;
+        align-items: center;
+        justify-content: space-between;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0px;
+        z-index: 4000;
+    }
+    .logo {
+        display: flex;
+        justify-content: space-around;
+    }
+    img {
+        width: 60px;
+        margin-right: 360px;
+    }
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1920px) {
+    .logo {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 130px;
+    }
+    img {
+        width: 60px;
+        margin-right: 160px;
+    }
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1480px) and (-webkit-min-device-pixel-ratio: 1) {
+    .logo {
+        display: flex;
+        justify-content: space-between;
+    }
+    img {
+        width: 60px;
+        margin-right: 160px;
+    }
+    .mainheader {
+        display: flex;
+        flex: 0.9;
+        align-items: center;
+        justify-content: space-between;
+        /* position: -webkit-sticky; */
+        position: sticky;
+        top: 0px;
+        z-index: 4000;
+    }
+    .rightside {
+        flex: 0.5;
+    }
+    .leftside {
+        flex: 0.6;
+    }
+}

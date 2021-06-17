@@ -1,0 +1,753 @@
+.mainBody {
+    background-color: #FCFCFF;
+    height: 100vh;
+}
+
+.backgroundCircles {
+    display: flex;
+    flex: 1;
+}
+
+* {
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+}
+
+.majorContent {
+    position: absolute;
+    z-index: 100;
+    display: grid;
+    top: 140px;
+    left: 136px;
+    grid-template-rows: 1fr 1fr 2fr;
+}
+
+.slidertext {
+    align-self: flex-start;
+}
+
+.slidervalue {
+    align-self: flex-start;
+}
+
+.mainheading {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.headingDown {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.handshakeimage {
+    width: 400px;
+}
+
+.linesmall {
+    width: 225px;
+    height: 5px;
+    background-color: #000;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow: auto;
+    padding: 0px;
+    margin: 0px;
+}
+
+.backgroundCircle1 {
+    flex: 0.6;
+    display: flex;
+    height: 700px;
+}
+
+.backgroundCircle2 {
+    flex: 0.4;
+}
+
+.circleSmall {
+    width: 364px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 214px;
+    left: -90px;
+}
+
+.circleBig {
+    position: relative;
+    width: 600px;
+    top: -174px;
+    align-self: flex-end;
+    right: 0
+}
+
+.accountingDots {
+    align-self: auto;
+    width: 300px;
+    position: absolute;
+    left: 281px;
+    top: 610px;
+}
+
+.accountingDots2 {
+    width: 300px;
+    align-self: flex-end;
+    position: absolute;
+    right: 10px;
+}
+
+.eligibilityCalculator {
+    position: absolute;
+    right: 230px;
+    display: grid;
+    grid-template-rows: 20px, 1fr, 1fr, 1fr, 1fr;
+    text-align: center;
+    top: 200px;
+    box-shadow: 0 6px 6px rgb(0 0 0 / 20%);
+    border-radius: 10px;
+    width: 317px;
+    background-color: #fff;
+    height: auto;
+}
+
+.eligibilityCalHeading {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.sliderBox {
+    display: flex;
+    flex-direction: column;
+    margin: 3px;
+    padding: 10px;
+}
+
+.sliderData {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px;
+    align-items: center;
+}
+
+.slidertext {
+    font-size: 14px;
+    color: rgb(19, 18, 18);
+    font-weight: 700;
+}
+
+.slidervalue {
+    font-size: 14px;
+    color: rgb(19, 18, 18);
+    font-weight: 700;
+}
+
+::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+    background-color: #663399;
+    /*replace with your color*/
+}
+
+::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+    background-color: #663399;
+    /*replace with your color*/
+}
+
+mat-slider.mat-slider-horizontal .mat-slider-track-background {
+    background-color: #663399 !important;
+}
+
+.custom-slider .ngx-slider .ngx-slider-selection {
+    background: #663399!important;
+}
+
+.showMinMax {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: rgb(212, 211, 211);
+}
+
+.showEmi {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 10px;
+    align-items: center;
+}
+
+.emiinput {
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+optgroup {
+    font-weight: 700;
+}
+
+select option {
+    font-weight: 700;
+}
+
+select option:first-child() {
+    font-weight: 700;
+}
+
+.dropdownbox {
+    padding: 5px;
+}
+
+.repaymentdata {
+    display: flex;
+    flex-direction: column;
+}
+
+.emitext {
+    display: flex;
+}
+
+.Emibox {
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+}
+
+.displayBox {
+    width: 144px;
+    position: absolute;
+    top: 295px;
+    right: 60px;
+    display: flex;
+    flex-direction: column;
+    height: 320px;
+    background-color: #663399;
+    box-shadow: 2px 2px 6px #663399;
+    border-bottom-right-radius: 18px;
+    justify-content: center;
+    border-top-right-radius: 18px;
+    padding: 8px;
+}
+
+.LButton {
+    border-radius: 25px;
+    width: 100px;
+    height: 29px;
+    border: 1px solid #fff;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #663399;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.LButton:hover {
+    background-color: #663399;
+    color: #fff;
+}
+
+.displaydata {
+    text-align: center;
+    display: grid;
+    grid-template-rows: 2fr 2fr 1fr;
+    align-self: center;
+}
+
+.loandetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.Lhead {
+    color: #fff;
+    opacity: 0.5;
+    font-size: 12px;
+}
+
+.Ehead {
+    color: #fff;
+    opacity: 0.5;
+    font-size: 12px;
+}
+
+.Lvalue {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+
+.Evalue {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+
+.lowerpage {
+    height: 800px;
+    display: flex;
+    flex: 1;
+    width: 100%;
+    background-image: url(./../../../assets/sol_wave_bg.svg);
+}
+
+.rightsideDetails {
+    flex: 0.6;
+    display: flex;
+    justify-content: center;
+}
+
+.leftstackBox {
+    flex: 0.5;
+    display: grid;
+    grid-gap: 40px;
+    margin: 2px;
+    grid-template-rows: 210px 210px 210px;
+}
+
+.rightstackBox {
+    flex: 0.5;
+    grid-gap: 40px;
+    margin: 1px;
+    display: grid;
+    grid-template-rows: 80px 210px 210px 90px;
+}
+
+.openCard {
+    width: 310px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 205px;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #F9F9F9;
+    box-shadow: 1px 1px 24px #2321321F;
+    border: 1px solid #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.leftsideDetails {
+    flex: 0.4;
+    display: flex;
+    align-items: center;
+}
+
+.leftsideData {
+    flex: 0.8;
+    display: grid;
+    grid-template-rows: 1fr 50px 90px 80px;
+}
+
+.emptyspace {
+    flex: 0.3;
+}
+
+.cardData {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.cardHeading {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333333;
+    padding-bottom: 8px;
+}
+
+.cardDetails {
+    font-size: 14px;
+    color: #999999;
+}
+
+.topHeading {
+    font-size: 40px;
+    font-weight: 600;
+    color: #222222;
+    margin-bottom: 5px;
+}
+
+.bottomHeading {
+    font-size: 40px;
+    font-weight: 600;
+    color: #222222;
+}
+
+.headLine {
+    width: 120px;
+    height: 6px;
+    border-radius: 20px;
+    color: #222222;
+    background-color: #222222;
+}
+
+.tagLine {
+    font-size: 18px;
+    color: #777777;
+}
+
+.lowerButton {
+    outline: none;
+    border: 2px solid #663399;
+    width: 200px;
+    height: 30px;
+    background: transparent;
+    border-radius: 24px;
+    color: #663399;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.lowerButton:hover {
+    background-color: #663399;
+    color: #fff;
+}
+
+.headerScroll {
+    width: 100%;
+    height: 57px;
+    background: transparent;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    transition: .4s all ease-in;
+}
+
+.headerScroll-show {
+    background: #ffffffd1;
+    box-shadow: 0 0 5px 0 #cccccc;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 2600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    .circleSmall {
+        width: 500px;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        top: 214px;
+        left: -40px;
+    }
+    .circleBig {
+        position: relative;
+        width: 800px;
+        overflow-x: hidden;
+        top: 0px;
+        align-self: flex-end;
+    }
+    .backgroundCircles {
+        display: flex;
+        flex: 1;
+    }
+    .backgroundCircle1 {
+        display: flex;
+        height: 700px;
+        justify-content: flex-end;
+    }
+    .backgroundCircle2 {
+        flex: 0.4;
+    }
+    .eligibilityCalculator {
+        position: absolute;
+        right: 740px;
+        display: grid;
+        grid-template-rows: 20px, 1fr, 1fr, 1fr, 1fr;
+        text-align: center;
+        top: 161px;
+        box-shadow: 0 6px 6px rgb(0 0 0 / 20%);
+        border-radius: 10px;
+        width: 317px;
+        background-color: #fff;
+        height: auto;
+    }
+    .displayBox {
+        width: 144px;
+        position: absolute;
+        top: 230px;
+        right: 568px;
+        display: flex;
+        flex-direction: column;
+        height: 320px;
+        background-color: #663399;
+        box-shadow: 2px 2px 6px #663399;
+        border-bottom-right-radius: 18px;
+        justify-content: center;
+        border-top-right-radius: 18px;
+        padding: 8px;
+    }
+    .accountingDots2 {
+        width: 300px;
+        align-self: flex-end;
+        position: absolute;
+        right: 615px;
+    }
+    .headerScroll {
+        width: 100vw;
+        height: 57px;
+        background: transparent;
+        display: flex;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        transition: .4s all ease-in;
+    }
+    .headerScroll-show {
+        background: #ffffffd1;
+        box-shadow: 0 0 5px 0 #cccccc;
+    }
+    .lowerpage {
+        height: 800px;
+        display: flex;
+        flex: 0.9;
+        background-image: url(./../../../assets/sol_wave_bg.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .rightsideDetails {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+    .leftstackBox {
+        display: grid;
+        grid-gap: 40px;
+        flex: 0.3;
+        margin: 2px;
+        grid-template-rows: 210px 210px 210px;
+    }
+    .rightstackBox {
+        flex: 0.4;
+        grid-gap: 40px;
+        margin: 1px;
+        display: grid;
+        grid-template-rows: 80px 210px 210px 90px;
+    }
+    .leftsideDetails {
+        flex: 1;
+        display: flex;
+        align-items: center;
+    }
+    .majorContent {
+        position: absolute;
+        z-index: 100;
+        display: grid;
+        top: 140px;
+        left: 353px;
+        grid-template-rows: 1fr 1fr 2fr;
+    }
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1920px) {
+    .leftstackBox {
+        display: grid;
+        grid-gap: 40px;
+        flex: 0.3;
+        margin: 2px;
+        grid-template-rows: 210px 210px 210px;
+    }
+}
+
+@media screen and (min-device-width: 960px) and (max-device-width: 1080px) {
+    .openCard {
+        width: 260px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        height: 160px;
+        margin: 10px;
+        border-radius: 20px;
+        padding: 10px;
+        background-color: #F9F9F9;
+        box-shadow: 1px 1px 24px #2321321F;
+        border: 1px solid #fff;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    .cardHeading {
+        font-size: 13px;
+        font-weight: 600;
+        color: #333333;
+        padding-bottom: 8px;
+    }
+    .cardDetails {
+        font-size: 11px;
+        color: #999999;
+    }
+    .topHeading {
+        font-size: 21px;
+        font-weight: 600;
+        color: #222222;
+        margin-bottom: 5px;
+    }
+    .bottomHeading {
+        font-size: 21px;
+        font-weight: 600;
+        color: #222222;
+    }
+    .headLine {
+        width: 120px;
+        height: 4px;
+        border-radius: 20px;
+        color: #222222;
+        background-color: #222222;
+    }
+    .majorContent {
+        position: absolute;
+        z-index: 100;
+        display: grid;
+        top: 140px;
+        left: 70px;
+        grid-template-rows: 1fr 1fr 2fr;
+    }
+    .mainheading {
+        font-size: 30px;
+        font-weight: 400;
+    }
+    .headingDown {
+        font-size: 30px;
+        font-weight: 400;
+    }
+    .linesmall {
+        width: 156px;
+        height: 4px;
+        background-color: #000;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+    .tagLine {
+        font-size: 16px;
+        color: #777777;
+    }
+    .displayBox {
+        width: 144px;
+        position: absolute;
+        top: 230px;
+        right: 60px;
+        display: flex;
+        flex-direction: column;
+        height: 320px;
+        background-color: #663399;
+        box-shadow: 2px 2px 6px #663399;
+        border-bottom-right-radius: 18px;
+        justify-content: center;
+        border-top-right-radius: 18px;
+        padding: 8px;
+    }
+    .eligibilityCalculator {
+        position: absolute;
+        right: 230px;
+        display: grid;
+        grid-template-rows: 20px, 1fr, 1fr, 1fr, 1fr;
+        text-align: center;
+        top: 140px;
+        box-shadow: 0 6px 6px rgb(0 0 0 / 20%);
+        border-radius: 10px;
+        width: 317px;
+        background-color: #fff;
+        height: auto;
+    }
+    .leftsideDetails {
+        flex: 0.6;
+        display: flex;
+        align-items: center;
+    }
+    .rightsideDetails {
+        flex: 0.4;
+        display: flex;
+        justify-content: center;
+        margin-left: 20px;
+    }
+    .accountingDots {
+        align-self: auto;
+        width: 260px;
+        position: absolute;
+        left: 176px;
+        top: 561px;
+    }
+    .accountingDots2 {
+        width: 259px;
+        align-self: flex-end;
+        position: absolute;
+        right: 10px;
+    }
+    .handshakeimage {
+        width: 350px;
+    }
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1400px) and (-webkit-min-device-pixel-ratio: 1) {
+    .eligibilityCalculator {
+        position: absolute;
+        right: 530px;
+        display: grid;
+        grid-template-rows: 20px, 1fr, 1fr, 1fr, 1fr;
+        text-align: center;
+        top: 140px;
+        box-shadow: 0 6px 6px rgb(0 0 0 / 20%);
+        border-radius: 10px;
+        width: 288px;
+        background-color: #fff;
+        height: auto;
+    }
+    .majorContent {
+        position: absolute;
+        z-index: 100;
+        display: grid;
+        top: 140px;
+        left: 96px;
+        grid-template-rows: 1fr 1fr 2fr;
+    }
+    .displayBox {
+        width: 105px;
+        position: absolute;
+        top: 230px;
+        right: 399px;
+        display: flex;
+        flex-direction: column;
+        height: 320px;
+        background-color: #663399;
+        box-shadow: 2px 2px 6px #663399;
+        border-bottom-right-radius: 18px;
+        justify-content: center;
+        border-top-right-radius: 18px;
+        padding: 8px;
+    }
+    .lowerpage {
+        height: 800px;
+        display: flex;
+        flex: 1;
+        /* width: 100%; */
+        background-image: url(./../../../assets/sol_wave_bg.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .rightsideDetails {
+        flex: 0.5;
+        display: flex;
+        margin-left: 20px;
+        justify-content: center;
+    }
+    .leftsideDetails {
+        flex: 0.5;
+        display: flex;
+        align-items: center;
+    }
+    .tagLine {
+        font-size: 16px;
+        color: #777777;
+    }
+    .accountingDots2 {
+        width: 300px;
+        align-self: flex-end;
+        position: absolute;
+        right: 320px;
+    }
+}

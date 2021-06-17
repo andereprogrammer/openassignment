@@ -1,0 +1,225 @@
+<div class="mainBody">
+    <header-component-open class="headerScroll" (scroll)="scrolling($event)" [ngClass]="{ 'headerScroll-show': scroll }"></header-component-open>
+    <div class="backgroundCircles">
+        <div class="backgroundCircle2">
+            <img src="./../../../assets/blob-small.svg" class="circleSmall" alt="blob" />
+            <img src="./../../../assets/accounting_dots.svg" class="accountingDots" alt="" srcset="" />
+            <div class="majorContent">
+                <span class="mainheading">We make it Super</span>
+                <span class="headingDown">Simple</span>
+                <hr class="linesmall" />
+                <img class="handshakeimage" src="./../../../assets/collect_img-video.png" alt="" srcset="" />
+            </div>
+        </div>
+        <div class="backgroundCircle1">
+            <img src="./../../../assets/circle.svg" class="circleBig" alt="circle" srcset="" />
+            <img src="./../../../assets/accounting_dots.svg" class="accountingDots2" alt="" srcset="" />
+
+            <div class="eligibilityCalculator">
+                <span class="eligibilityCalHeading">Eligibility Calculator</span>
+                <div class="sliderBox">
+                    <div class="sliderData">
+                        <label class="slidertext">Monthly Income</label>
+                        <span class="slidervalue">{{
+              gridsize.value | currency: "INR":"symbol":"1.0"
+            }}</span>
+                    </div>
+
+                    <mat-slider #gridsize (change)="updateSetting($event)" step="5" min="100000" max="300000" [value]="gridsize"></mat-slider>
+                    <span class="showMinMax"><span>100000</span><span>300000</span></span>
+                </div>
+                <div class="sliderBox">
+                    <div class="sliderData">
+                        <label class="slidertext">Monthly Expense</label>
+                        <span class="slidervalue">{{
+              expense.value | currency: "INR":"symbol":"1.0"
+            }}</span>
+                    </div>
+
+                    <mat-slider #expense (change)="expenseSetting($event)" step="5" min="10000" max="150000" [value]="expense"></mat-slider>
+                    <span class="showMinMax"><span>10000</span><span>150000</span></span>
+                </div>
+                <div class="dropdownbox">
+                    <div class="repaymentdata">
+                        <span style="
+                font-size: 14px;
+                font-weight: 400;
+                align-self: flex-start;
+                padding-left: 5px;
+                margin-left: 10px;
+              ">Repayment Tenure</span
+            >
+
+            <select
+              name="repaymenttenure"
+              style="outline: none; border: none; margin: 10px"
+              id="tenure"
+            >
+              <optgroup>
+                <option value="3months">3 months</option>
+                <option value="6months">6 months</option>
+                <option value="12 months">12 months</option>
+                <option value="18 months">18 months</option>
+              </optgroup>
+            </select>
+          </div>
+          <span class="showEmi"
+            ><span style="font-size: 12px"
+              >Do you have any existing loans ?</span
+            ><span><mat-slide-toggle></mat-slide-toggle></span
+          ></span>
+                    </div>
+                    <div class="Emibox">
+                        <span class="emitext"><span
+              style="
+                text-align: left;
+                padding: 5px;
+                margin-bottom: 5px;
+                width: auto;
+                margin-left: 10px;
+                font-size: 14px;
+              "
+              >Emi of existing loan (optional) ?</span
+            ></span
+          >
+          <div class="emidata">
+            <input
+              class="emiinput"
+              style="
+                float: left;
+                padding: 5px;
+                margin-bottom: 10px;
+                margin-left: 10px;
+              "
+              type="text"
+              name="emi"
+              id="emi"
+              placeholder="15000"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="displayBox">
+        <div class="displaydata">
+          <div class="loandetails">
+            <span class="Lhead">Loan Amount</span>
+                        <span class="Lvalue">
+              {{ loanamount | currency: "INR":"symbol":"1.0" }}</span
+            >
+          </div>
+          <div class="loandetails">
+            <span class="Ehead">Emi per month</span>
+                        <span class="Evalue">{{
+              emiamount | currency: "INR":"symbol":"1.0"
+            }}</span>
+                    </div>
+
+                    <button id="LButton" class="LButton">Get Money</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lowerpage">
+        <div class="rightsideDetails">
+            <div class="leftstackBox">
+                <div class="openCard" id="opencard1" (mouseover)="
+            ChangeCardColor('opencard1', 'cardHeading1', 'cardDetails1')
+          " (mouseleave)="ResetColor('opencard1')">
+                    <img src="./../../../assets/Get Paid Instantly.png" alt="Get Paid Instantly" srcset="" />
+                    <div class="cardData">
+                        <span class="cardHeading" id="cardHeading1">
+              Quick cash disbursement</span
+            >
+            <span class="cardDetails" id="cardDetails1">
+              Get terms loans that your business needs within 72 hrs
+            </span>
+                    </div>
+                </div>
+                <div class="openCard" id="opencard2" (mouseover)="
+            ChangeCardColor('opencard2', 'cardHeading2', 'cardDetails2')
+          " (mouseleave)="ResetColor('opencard2')">
+                    <img src="./../../../assets/Secure Payments.png" alt="Secure Payment" srcset="" />
+                    <div class="cardData">
+                        <span class="cardHeading" id="cardHeading2"> Zero Paperwork </span>
+                        <span class="cardDetails" id="cardDetails2">
+              Get started instantly by submitting only your basic details & bank
+              statements
+            </span>
+                    </div>
+                </div>
+                <div class="openCard" id="opencard3" (mouseover)="
+            ChangeCardColor('opencard3', 'cardHeading3', 'cardDetails3')
+          " (mouseleave)="ResetColor('opencard3')">
+                    <img src="./../../../assets/Low interest rate.png" alt="Low interest rate" srcset="" />
+                    <div class="cardData">
+                        <span class="cardHeading" id="cardHeading3">
+              Low-interest rate
+            </span>
+                        <span class="cardDetails" id="cardDetails3">
+              Achieve your financial goals with an amazing interest rate
+              starting at 13% per annum
+            </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rightstackBox">
+                <div></div>
+                <div class="openCard" id="opencard4" (mouseover)="
+            ChangeCardColor('opencard4', 'cardHeading4', 'cardDetails4')
+          " (mouseleave)="ResetColor('opencard4')">
+                    <img src="./../../../assets/freelancer_feature_icon_6@1.5x.png" alt="Low interest rate" srcset="" />
+                    <div class="cardData">
+                        <span class="cardHeading" id="cardHeading4">
+              Ace your business finances</span
+            >
+            <span class="cardDetails" id="cardDetails4">
+              Manage banking, accounting & everything in between, on one
+              platform</span
+            >
+          </div>
+        </div>
+        <div
+          class="openCard"
+          id="opencard5"
+          (mouseover)="
+            ChangeCardColor('opencard5', 'cardHeading5', 'cardDetails5')
+          "
+          (mouseleave)="ResetColor('opencard5')"
+        >
+          <img
+            src="./../../../assets/Covid.png"
+            alt="Low interest rate"
+            srcset=""
+          />
+          <div class="cardData">
+            <span class="cardHeading" id="cardHeading5">
+              Loans to fight COVID-19</span
+            >
+            <span class="cardDetails" id="cardDetails5">
+              Zero EMI for first 3 months on Back-to-Business loans of upto 1
+              lakh
+            </span>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+        </div>
+        <div class="leftsideDetails">
+            <div class="leftsideData">
+                <span class="topHeading">Boost your business<br /><span class="bottomHeading"
+            >with Open</span
+          ></span
+        >
+
+        <hr class="headLine" />
+        <span class="tagLine"
+          >Get your hands on a term loan that’s crafted for your business</span
+        >
+        <button class="lowerButton">Get an Open Account</button>
+      </div>
+      <div class="emptyspace"></div>
+    </div>
+  </div>
+</div>
+<footer-component-open></footer-component-open>
